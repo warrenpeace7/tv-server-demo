@@ -40,6 +40,7 @@ app.get('/shows', (req, res) => {
 app.post('/shows', (req, res) => {
     const newShow = req.body
     inMemoryDatabase.shows.push(newShow)
+    console.log(newShow)
     res.send(newShow)
 } )
 
